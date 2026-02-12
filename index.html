@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact — Janelle</title>
-  <meta name="description" content="Contact Janelle." />
+  <title>Axel Palacios — Portfolio</title>
+  <meta name="description" content="Janelle Tenorio portfolio site (GitHub Pages)." />
   <link rel="icon" href="assets/AP-icon.png" type="image/png" />
   <link rel="stylesheet" href="assets/css/styles.css" />
   <script defer src="assets/js/main.js"></script>
@@ -14,21 +14,25 @@
     <div class="container header-row">
       <a class="brand" href="./" aria-label="Home">
         <img class="brand-mark" src="assets/img/AP-icon.png" alt="AP logo">
-        <span class="brand-name">JANELLE</span>
+        <span class="brand-name">AXEL</span>
       </a>
+
+      
       <nav class="nav" aria-label="Primary navigation">
-        <a href="./">Home</a>
+        <a href="./" class="active">Home</a>
         <a href="about.html">About</a>
         <a href="projects.html">Projects</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html" class="nav-cta">Contact</a>
       </nav>
+
       <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
+
     <div class="mobile-nav" id="mobileNav" aria-hidden="true">
-      <a href="./">Home</a>
+      <a href="./" class="active">Home</a>
       <a href="about.html">About</a>
       <a href="projects.html">Projects</a>
       <a href="blog.html">Blog</a>
@@ -36,46 +40,108 @@
     </div>
   </header>
 
-  <main class="section">
-    <div class="container">
-      <h1>Contact</h1>
-      <div class="prose">
-        
-<p class="lead">Let's get connected!</p>
-<div class="cards">
-  <article class="card">
-  <h3>Email</h3>
-  <a href="mailto:janelle.tenorio12@gmail.com" class="contact-icon">
-    <img src="assets/icons/gmail-icon.avif" alt="Email Janelle">
-  </a>
-</article>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <p class="kicker">IT • Cybersecurity • Data Analytics</p>
+          <h1>Hi, I’m <span class="accent">Janelle</span>!<br />Building <span class="accent">secure</span> and clean tech.</h1>
+          <p class="lead">
+            I’m an IT/Cybersecurity-focused student building projects in networking, app development,
+            and security fundamentals.
+          </p>
 
-<article class="card">
-  <h3>LinkedIn</h3>
-  <a href="w.linkedin.com/in/tenoriojan/" target="_blank" class="contact-icon">
-    <img src="assets/icons/linkedin-icon.jpg" alt="Janelle LinkedIn">
-  </a>
-</article>
+          <div class="hero-actions">
+            <a class="btn" href="assets/Janelle_TechnicialSupport.pdf" download>Download Resume</a>
 
-<article class="card">
-  <h3>GitHub</h3>
-  <a href="https://github.com/janelleet" target="_blank" class="contact-icon">
-    <img src="assets/icons/github-icon.png" alt="Janelle GitHub">
-  </a>
-</article>
-</div>
+            <a class="btn btn-ghost" href="#projects">
+              <span class="play" aria-hidden="true"></span>
+              Watch the work
+            </a>
+          </div>
 
+          <div class="hero-meta">
+            <div class="meta-pill">Based in Atlanta, GA</div>
+            <div class="meta-pill">Lets Connect!</div>
+            <div class="meta-pill">Bachelors in Information Technology</div>
+            <div class="meta-pill">Concentration in Cybersecurity</div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="portrait-wrap">
+           <img src="assets/img/portfolio-picture.jpg" alt="Janelle Tenorio portrait" />
+
+          </div>
+          <p class="small muted center"></p>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Featured projects</h2>
+          <p class="muted"></p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Networking / Wireshark Lab</h3>
+            <p>Packet capture analysis, HTTP inspection, and troubleshooting notes.</p>
+            <div class="card-links">
+              <a href="#">Write-up</a>
+              <a href="#">Repo</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>SQL Database Project</h3>
+            <p>ERD → normalized tables → queries for reports and stats.</p>
+            <div class="card-links">
+              <a href="#">Repo</a>
+              <a href="#">Screenshots</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Java / Python App</h3>
+            <p>Menu-driven CLI app with validation, clean structure, and comments.</p>
+            <div class="card-links">
+              <a href="#">Repo</a>
+              <a href="#">Demo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container two-col">
+        <div>
+          <h2>What I do</h2>
+          <p class="muted">
+            I focus on practical, hands-on projects that build foundational skills in IT, Data Analytics, and
+            cybersecurity.
+          </p>
+        </div>
+        <ul class="list">
+          <li><strong>Networking basics:</strong> VLANs, packet analysis, troubleshooting</li>
+          <li><strong>Security fundamentals:</strong> secure habits, least privilege, risk thinking</li>
+          <li><strong>Development:</strong> Java/Python projects, Git/GitHub, clean docs</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>© <span id="year"></span> Janelle Tenorio</p>
+        <div class="footer-links">
+          <a href="contact.html">Contact</a>
+          <a href="https://github.com/janelleet" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+    </footer>
   </main>
-
-  <footer class="site-footer">
-    <div class="container footer-row">
-      <p>© <span id="year"></span> Janelle Tenorio</p>
-      <div class="footer-links">
-        <a href="contact.html">Contact</a>
-      </div>
-    </div>
-  </footer>
 </body>
 </html>
