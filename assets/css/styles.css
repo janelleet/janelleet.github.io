@@ -2,7 +2,7 @@
 
 :root{
   --bg: #3a273d;            /* near-black */
-  --bg2: #31143c;           /* midnight */
+  --bg2: #3c1c48;           /* midnight */
   --surface: rgba(255,255,255,.04);
   --surface2: rgba(255,255,255,.06);
   --border: rgba(255,255,255,.10);
@@ -53,7 +53,7 @@ code{
   top: 0;
   z-index: 30;
   backdrop-filter: blur(10px);
-  background: rgb(40 10 44);
+  background: rgb(46 12 50);
   border-bottom: 1px solid var(--border);
 }
 
