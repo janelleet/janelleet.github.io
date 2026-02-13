@@ -1,16 +1,16 @@
 /* Janelle Tenorio — Grey/White/Black + Midnight Purple */
 
 :root{
-  --bg: #0b0c10;            /* near-black */
-  --bg2: #0f1220;           /* midnight */
+  --bg: #3a273d;            /* near-black */
+  --bg2: #31143c;           /* midnight */
   --surface: rgba(255,255,255,.04);
   --surface2: rgba(255,255,255,.06);
   --border: rgba(255,255,255,.10);
   --text: #f3f4f6;          /* white-ish */
-  --muted: rgba(243,244,246,.72);
-  --accent: #6d28d9;        /* midnight purple */
-  --accent2: #a78bfa;       /* soft purple */
-  --shadow: 0 18px 50px rgba(0,0,0,.45);
+  --muted: rgb(255 255 255 / 72%);
+  --accent: #d3b7ff;        /* midnight purple */
+  --accent2: #b299fa;       /* soft purple */
+  --shadow: 0 18px 50px rgb(136 136 136 / 45%);
   --radius: 18px;
   --max: 1080px;
   --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -22,7 +22,7 @@ html, body{ margin:0; padding:0; font-family: var(--font); color: var(--text); }
 
 body{
   background:
-    radial-gradient(900px 520px at 20% 0%, rgba(109,40,217,.22), transparent 60%),
+    radial-gradient(900px 520px at 20% 0%, rgb(69 11 159 / 22%), transparent 60%),
     radial-gradient(800px 520px at 85% 18%, rgba(167,139,250,.14), transparent 55%),
     linear-gradient(180deg, var(--bg2), var(--bg));
   min-height: 100vh;
@@ -39,7 +39,7 @@ a:hover{ text-decoration: underline; }
 code{
   font-family: var(--mono);
   background: rgba(109,40,217,.10);
-  border: 1px solid rgba(109,40,217,.25);
+  border: 1px solid rgb(191 149 255 / 25%);
   padding: 2px 6px;
   border-radius: 10px;
 }
@@ -54,7 +54,7 @@ code{
   top: 0;
   z-index: 30;
   backdrop-filter: blur(10px);
-  background: rgba(11,12,16,.55);
+  background: rgb(40 10 44);
   border-bottom: 1px solid var(--border);
 }
 
@@ -86,7 +86,7 @@ code{
   content:"";
   position:absolute;
   inset: 10px;
-  border: 2px solid rgba(255,255,255,.22);
+  border: 2px solid rgb(255 255 255 / 22%);
   border-radius: 10px;
 }
 
@@ -97,7 +97,7 @@ code{
 }
 
 .nav a{
-  color: rgba(243,244,246,.78);
+  color: rgb(255 255 255 / 78%);
   font-weight: 700;
   font-size: .95rem;
   padding: 8px 10px;
@@ -111,7 +111,7 @@ code{
 }
 
 .nav-cta{
-  border: 1px solid rgba(109,40,217,.35);
+  border: 1px solid rgb(253 253 253 / 37%);
   background: rgba(109,40,217,.10);
 }
 
@@ -121,7 +121,7 @@ code{
   width: 46px;
   height: 46px;
   border-radius: 14px;
-  border: 1px solid rgba(109,40,217,.35);
+  border: 1px solid rgb(148 131 173 / 35%);
   background: rgba(109,40,217,.10);
   cursor: pointer;
   align-items:center;
@@ -220,8 +220,8 @@ h1{
 .btn:hover{ text-decoration:none; background: rgba(255,255,255,.06); }
 
 .btn:not(.btn-ghost){
-  border-color: rgba(109,40,217,.35);
-  background: linear-gradient(180deg, rgba(109,40,217,.35), rgba(109,40,217,.18));
+  border-color: rgb(255 255 255 / 35%);
+  background: linear-gradient(180deg, rgb(66 19 139 / 35%), rgba(109,40,217,.18));
 }
 
 .btn-ghost{
@@ -257,7 +257,7 @@ h1{
   border-radius: 999px;
   border: 1px solid rgba(255,255,255,.10);
   background: rgba(255,255,255,.03);
-  color: rgba(243,244,246,.75);
+  color: rgb(255 255 255 / 75%);
   font-weight: 700;
   font-size: .9rem;
 }
@@ -268,7 +268,7 @@ h1{
   aspect-ratio: 1 / 1;
   margin: 0 auto;
   position: relative;
-  filter: drop-shadow(0 25px 55px rgba(0,0,0,.5));
+  filter: drop-shadow(0 25px 55px rgb(174 174 174 / 50%));
 }
 
 .portrait-wrap::before{
@@ -276,7 +276,7 @@ h1{
   position:absolute;
   inset: -14px;
   border-radius: 28px;
-  background: linear-gradient(135deg, rgba(167,139,250,.95), rgba(109,40,217,.9));
+  background: linear-gradient(135deg, rgb(255 255 255), rgba(109,40,217,.9));
   clip-path: polygon(25% 6%, 75% 6%, 96% 28%, 96% 72%, 75% 94%, 25% 94%, 4% 72%, 4% 28%);
 }
 
@@ -285,7 +285,7 @@ h1{
   position:absolute;
   inset: -2px;
   border-radius: 24px;
-  background: rgba(11,12,16,.95);
+  background: rgb(0 0 0 / 95%);
   clip-path: polygon(25% 7%, 75% 7%, 95% 28%, 95% 72%, 75% 93%, 25% 93%, 5% 72%, 5% 28%);
 }
 
@@ -303,7 +303,7 @@ h1{
 /* Sections */
 .section{ padding: 54px 0; }
 .section-alt{
-  background: rgba(255,255,255,.02);
+  background: rgb(202 176 176 / 2%);
   border-top: 1px solid rgba(255,255,255,.06);
   border-bottom: 1px solid rgba(255,255,255,.06);
 }
