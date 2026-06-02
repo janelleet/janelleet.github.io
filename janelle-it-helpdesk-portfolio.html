@@ -3,135 +3,294 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Janelle Tenorio | IT Help Desk Portfolio</title>
-  <meta name="description" content="Entry-level IT Help Desk portfolio for Janelle Tenorio featuring IT support experience, technical skills, and hands-on troubleshooting labs." />
+  <title>Janelle Tenorio — IT & Cybersecurity Portfolio</title>
+  <meta name="description" content="Early-career IT and cybersecurity portfolio for Janelle Tenorio, featuring projects, experience, and hands-on technical skills." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand" aria-label="Janelle Tenorio brand">
-        <div class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M12 14h24v8H20v12h16"/>
-            <path d="M18 34h18"/>
-            <circle cx="14" cy="34" r="2.5" fill="currentColor" stroke="none"/>
+    <div class="container nav-shell">
+      <a class="brand" href="#top" aria-label="Janelle Tenorio home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 5h7a5 5 0 0 1 0 10H9" />
+            <path d="M6 5v14" />
+            <path d="M9 15l8 4" />
           </svg>
-        </div>
-        <div class="brand-text">Janelle Tenorio<small>IT Help Desk Portfolio</small></div>
-      </div>
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#resume">Resume</a>
+        </span>
+        <span>Janelle Tenorio</span>
+      </a>
+
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </nav>
-      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch color theme">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-      </button>
+
+      <div class="header-actions">
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to dark mode">☾</button>
+        <a class="btn btn-secondary" href="#resume">Resume</a>
+      </div>
     </div>
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <span class="eyebrow"><span class="dot"></span>Entry-level IT support with a security mindset</span>
-          <h1>Help desk–ready support portfolio built around real troubleshooting and user support.</h1>
-          <p class="lead">I’m Janelle Tenorio, an early-career IT professional in Atlanta with hands-on experience in ServiceNow, Level 1 and Level 2 support, and customer-facing problem solving. This site is built to show how I think, document issues, and support users clearly.</p>
+    <section class="hero container" id="top">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">IT support • cybersecurity • data analytics</span>
+          <h1>Early-career IT professional with a security mindset.</h1>
+          <p>I build hands-on projects in networking, packet analysis, SQL, and technical support so employers can see how I troubleshoot, document, and think through real problems.</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#projects">View support labs</a>
-            <a class="btn btn-secondary" href="#resume">See resume highlights</a>
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="#contact">Contact Me</a>
+          </div>
+          <div class="hero-meta" aria-label="Quick facts">
+            <span>Atlanta, Georgia</span>
+            <span>Open to work</span>
+            <span>B.S. in IT, Cybersecurity</span>
           </div>
         </div>
-        <div class="hero-side">
-          <aside class="portrait-card" aria-label="Profile picture area">
-            <div class="portrait-frame">
-              <!-- Replace this block with your real image tag when ready. Example:
-              <img src="./assets/janelle-headshot.jpg" alt="Portrait of Janelle Tenorio" width="800" height="1000" loading="lazy">
-              -->
-              <div>
-                <strong>Add your photo here</strong>
-                <span>Use a professional headshot or clean portrait.<br>Recommended ratio: 4:5.</span>
-              </div>
-            </div>
-          </aside>
-          <aside class="hero-card" aria-label="Quick highlights">
-          <div class="stat">
-            <div class="stat-value">Level 1 / 2</div>
-            <div class="stat-label">Support experience through ITSM internship</div>
+
+        <aside class="hero-panel" aria-label="Professional snapshot">
+          <div>
+            <span class="eyebrow">Snapshot</span>
+            <p class="hero-panel-text">Focused on support, documentation, secure practices, and foundational analysis that translates well to help desk, SOC, and junior operations roles.</p>
           </div>
-          <div class="stat">
-            <div class="stat-value">ServiceNow</div>
-            <div class="stat-label">Ticket tracking, incident handling, and workflow visibility</div>
-          </div>
-          <div class="stat">
-            <div class="stat-value">English + Spanish</div>
-            <div class="stat-label">Bilingual support communication for users and teams</div>
+          <div class="snapshot-grid">
+            <div class="snapshot-item"><strong>Target roles</strong><span>IT Support, SOC Analyst, Systems Support</span></div>
+            <div class="snapshot-item"><strong>Core tools</strong><span>Wireshark, SQL, Linux, GitHub</span></div>
+            <div class="snapshot-item"><strong>Strengths</strong><span>Troubleshooting, documentation, service mindset</span></div>
+            <div class="snapshot-item"><strong>Current focus</strong><span>Networking labs, packet analysis, technical workflow</span></div>
           </div>
         </aside>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">About</span>
+            <h2>Built for recruiters who scan fast.</h2>
+          </div>
+          <p>This portfolio is designed to show more than coursework. It highlights how I approach technical support, network visibility, system security, and structured problem solving through projects, internships, and documented practice.</p>
+        </div>
+
+        <div class="roles-grid">
+          <article class="card">
+            <div class="tag-row"><span class="tag">Role target</span></div>
+            <h3>IT Support / Help Desk</h3>
+            <p>I bring user support instincts, documentation habits, and comfort with Windows, Linux, ticket flow, and practical troubleshooting.</p>
+            <ul class="mini-list">
+              <li>Ticket handling and service operations</li>
+              <li>User communication and issue triage</li>
+              <li>Systems fundamentals and clean documentation</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="tag-row"><span class="tag">Role target</span></div>
+            <h3>Cybersecurity Analyst</h3>
+            <p>I am building a strong foundation in network analysis, least privilege, risk thinking, and security-oriented troubleshooting.</p>
+            <ul class="mini-list">
+              <li>Packet review and protocol inspection</li>
+              <li>Basic scanning and visibility tools</li>
+              <li>Security-first system habits</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="tag-row"><span class="tag">Role target</span></div>
+            <h3>Junior Technical Operations</h3>
+            <p>I work well in environments that need process reliability, careful communication, and consistent follow-through across technical tasks.</p>
+            <ul class="mini-list">
+              <li>Operational support mindset</li>
+              <li>Cross-team coordination</li>
+              <li>Structured follow-up and accountability</li>
+            </ul>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="about">
+    <section class="section" id="projects">
       <div class="container">
-        <div class="section-head">
+        <div class="section-header">
           <div>
-            <h2>What this portfolio shows</h2>
+            <span class="eyebrow">Featured projects</span>
+            <h2>Hands-on work with clearer proof.</h2>
           </div>
-          <p>This site is structured like an IT support portfolio: practical experience first, then troubleshooting labs, documentation habits, and technical skills. Recruiters for entry-level IT support often value clear project write-ups, troubleshooting examples, and visible documentation habits in beginner portfolios.</p>
+          <p>Each project is reframed as a mini case study so visitors can see the problem, the tools, the actions I took, and the value of the work instead of just the assignment title.</p>
         </div>
-        <div class="grid-3">
+
+        <div class="projects-grid">
           <article class="card">
-            <h3>Support mindset</h3>
-            <p>Focus on end-user support, ticket ownership, communication, and step-by-step troubleshooting instead of only listing tools.</p>
+            <div class="tag-row">
+              <span class="tag">Supports SOC / IT Support</span>
+              <span class="tag">Wireshark</span>
+            </div>
+            <h3>Network Traffic Analysis Lab</h3>
+            <p>Captured and reviewed packet traffic to understand protocol behavior, inspect HTTP requests, and document what meaningful traffic analysis can reveal during troubleshooting.</p>
+            <div class="project-meta">
+              <div><strong>Problem:</strong> Practice how packet data supports troubleshooting and visibility.</div>
+              <div><strong>Actions:</strong> Captured traffic, filtered sessions, reviewed requests, and wrote notes in plain language.</div>
+              <div><strong>Outcome:</strong> Stronger understanding of protocol flow and how packet inspection supports support and security work.</div>
+            </div>
+            <div class="project-links">
+              <a href="#contact">Add case-study link</a>
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub placeholder</a>
+            </div>
           </article>
+
           <article class="card">
-            <h3>Case-study projects</h3>
-            <p>Each project is meant to show the problem, tools used, steps taken, outcome, and what was learned, which is a recommended structure for beginner IT portfolios.</p>
+            <div class="tag-row">
+              <span class="tag">Supports Data / Ops</span>
+              <span class="tag">SQL</span>
+            </div>
+            <h3>SQL Database Project</h3>
+            <p>Designed a database from entity relationships to normalized tables, then wrote queries that turn structured data into useful reporting and analysis.</p>
+            <div class="project-meta">
+              <div><strong>Problem:</strong> Build a clean structure for storing and retrieving data accurately.</div>
+              <div><strong>Actions:</strong> Modeled entities, normalized the schema, and developed reporting queries.</div>
+              <div><strong>Outcome:</strong> Demonstrated how organization and query logic support better reporting decisions.</div>
+            </div>
+            <div class="project-links">
+              <a href="#contact">Add schema screenshots</a>
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub placeholder</a>
+            </div>
           </article>
+
           <article class="card">
-            <h3>Job-ready story</h3>
-            <p>The overall message is simple: real support experience, strong customer service, and growing technical depth for help desk and IT support roles.</p>
+            <div class="tag-row">
+              <span class="tag">Supports IT / Dev</span>
+              <span class="tag">Java / Python</span>
+            </div>
+            <h3>CLI Application Project</h3>
+            <p>Built a menu-driven command-line application with validation, clean structure, and readable logic to strengthen practical programming habits.</p>
+            <div class="project-meta">
+              <div><strong>Problem:</strong> Create a reliable small application with usable flow and organized code.</div>
+              <div><strong>Actions:</strong> Structured menus, validated input, separated logic clearly, and documented choices.</div>
+              <div><strong>Outcome:</strong> Improved confidence in building maintainable beginner-friendly tools and writing clearer code.</div>
+            </div>
+            <div class="project-links">
+              <a href="#contact">Add code walkthrough</a>
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub placeholder</a>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="experience">
+    <section class="section" id="skills">
       <div class="container">
-        <div class="section-head">
+        <div class="section-header">
           <div>
-            <h2>Experience</h2>
+            <span class="eyebrow">Skills by function</span>
+            <h2>Grouped around the jobs you want.</h2>
           </div>
-          <p>Help desk resumes and portfolios work best when they show a support-focused summary, relevant ticketing or troubleshooting experience, and customer service that transfers well to user support roles.</p>
+          <p>Instead of a long stack list, these categories show where my tools fit in actual work: support, networking, security, and data-oriented tasks.</p>
         </div>
+
+        <div class="skills-grid">
+          <article class="card skills-card">
+            <h3>IT Support & Systems</h3>
+            <p>Foundational platform knowledge with a service-oriented approach to problem solving.</p>
+            <ul>
+              <li>Windows, Linux, virtual machines</li>
+              <li>Technical troubleshooting and user support</li>
+              <li>Documentation, workflow discipline, and clean notes</li>
+            </ul>
+          </article>
+
+          <article class="card skills-card">
+            <h3>Networking</h3>
+            <p>Core networking concepts applied through labs and packet inspection exercises.</p>
+            <ul>
+              <li>TCP/IP, DNS, DHCP, VLAN basics</li>
+              <li>Wireshark packet analysis and HTTP inspection</li>
+              <li>Connectivity troubleshooting mindset</li>
+            </ul>
+          </article>
+
+          <article class="card skills-card">
+            <h3>Security Fundamentals</h3>
+            <p>Early-career security knowledge centered on safe habits, visibility, and access control concepts.</p>
+            <ul>
+              <li>Least privilege, risk thinking, IAM basics</li>
+              <li>Security awareness and secure operational habits</li>
+              <li>Nmap and foundational analysis exposure</li>
+            </ul>
+          </article>
+
+          <article class="card skills-card">
+            <h3>Data & Scripting</h3>
+            <p>Entry-level data handling and scripting that support reporting, analysis, and logic building.</p>
+            <ul>
+              <li>SQL schema design and reporting queries</li>
+              <li>Excel and Python basics</li>
+              <li>Git, GitHub, and VS Code workflow</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Experience</span>
+            <h2>Support, service, and follow-through.</h2>
+          </div>
+          <p>Your original experience is preserved here, but reframed so employers can connect it to technical support, process ownership, and communication under pressure.</p>
+        </div>
+
         <div class="timeline">
           <article class="timeline-item">
-            <div class="timeline-date">Jan 2024 – Apr 2024<br>Atlanta, GA</div>
+            <div class="timeline-date">Jan 2024 – Apr 2024</div>
             <div>
-              <h3>IT Service Management Intern · Norfolk Southern</h3>
+              <h3>IT Intern</h3>
+              <h4>Norfolk Southern</h4>
               <ul>
-                <li>Provided Level 1 and Level 2 technical support while tracking and resolving incidents through ServiceNow.</li>
-                <li>Supported daily IT operations across Help Desk and Change Management functions.</li>
-                <li>Tracked assigned work and trouble tickets to support compliance and improve incident management visibility using ServiceNow and Office 365.</li>
+                <li>Supported IT service management operations and assisted with ticket tracking across active requests.</li>
+                <li>Helped maintain documentation and contributed to operational visibility through system monitoring tasks.</li>
+                <li>Built experience in structured technical workflows, follow-up, and communication inside an enterprise environment.</li>
               </ul>
             </div>
           </article>
+
           <article class="timeline-item">
-            <div class="timeline-date">Current · Atlanta, GA</div>
+            <div class="timeline-date">Graduated May 2025</div>
             <div>
-              <h3>Barista · Starbucks</h3>
+              <h3>B.S. Information Technology</h3>
+              <h4>Concentration in Cybersecurity</h4>
               <ul>
-                <li>Built strong customer service, multitasking, and communication habits in a fast-paced environment.</li>
-                <li>Handled high-volume requests while staying accurate, calm, and responsive under pressure.</li>
-                <li>Strengthened front-line service skills that transfer directly to user support and help desk work.</li>
+                <li>Developed a foundation in networking, cyber operations security, and hands-on technical labs.</li>
+                <li>Built projects across SQL, packet analysis, command-line development, and structured documentation.</li>
+                <li>Used coursework to strengthen technical reasoning and role-ready foundational skills.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-date">2018 – Present</div>
+            <div>
+              <h3>Barista</h3>
+              <h4>Starbucks</h4>
+              <ul>
+                <li>Built strong customer communication, multitasking, and teamwork habits in a fast-paced environment.</li>
+                <li>Handled competing priorities while maintaining quality, speed, and consistency.</li>
+                <li>Strengthened service mindset and calm problem solving that transfer well to user-facing IT roles.</li>
               </ul>
             </div>
           </article>
@@ -139,174 +298,70 @@
       </div>
     </section>
 
-    <section id="projects">
+    <section class="section" id="resume">
       <div class="container">
-        <div class="section-head">
+        <div class="section-header">
           <div>
-            <h2>Support labs</h2>
+            <span class="eyebrow">Learning & resume</span>
+            <h2>Show growth, not just history.</h2>
           </div>
-          <p>Good beginner IT support portfolios usually feature troubleshooting scenarios, home lab work, account or ticketing simulations, and concise screenshots or write-ups that show how the issue was solved.</p>
+          <p>A living portfolio works best when it includes active learning, lab updates, and clear next steps for employers who want to review your resume or GitHub quickly.</p>
         </div>
-        <div class="grid-2">
-          <article class="card project-card">
-            <div class="project-top">
-              <div>
-                <div class="project-num">Lab 01</div>
-                <h3>Email Login Troubleshooting</h3>
+
+        <div class="learning-grid">
+          <div class="card">
+            <h3>Current learning focus</h3>
+            <div class="resource-list">
+              <div class="resource-item">
+                <strong>Networking and packet visibility</strong>
+                Building confidence in reading traffic, filtering captures, and explaining findings clearly.
               </div>
-              <div class="project-links">
-                <span class="mini-link">Documentation</span>
-                <span class="mini-link">Troubleshooting</span>
+              <div class="resource-item">
+                <strong>Technical support workflow</strong>
+                Strengthening issue handling, documentation, and service communication habits.
               </div>
-            </div>
-            <p>Simulated a user who could not sign into email on a MacBook and documented the user interview questions, browser checks, account-recovery process, root cause, and resolution.</p>
-            <div class="tag-list">
-              <span class="tag">User support</span>
-              <span class="tag">Browser troubleshooting</span>
-              <span class="tag">Account recovery</span>
-            </div>
-          </article>
-          <article class="card project-card">
-            <div class="project-top">
-              <div>
-                <div class="project-num">Lab 02</div>
-                <h3>macOS New User Setup &amp; Hardening</h3>
-              </div>
-              <div class="project-links">
-                <span class="mini-link">Onboarding</span>
-                <span class="mini-link">macOS</span>
+              <div class="resource-item">
+                <strong>Security foundations</strong>
+                Expanding practical understanding of least privilege, scanning, and secure system thinking.
               </div>
             </div>
-            <p>Structured a new-user setup workflow for macOS covering account review, security settings, software updates, essential apps, and documentation that another technician could repeat.</p>
-            <div class="tag-list">
-              <span class="tag">Device setup</span>
-              <span class="tag">Security basics</span>
-              <span class="tag">Documentation</span>
+          </div>
+
+          <div class="card">
+            <h3>Recruiter actions</h3>
+            <div class="resource-list">
+              <a class="resource-item" href="https://github.com/" target="_blank" rel="noopener noreferrer"><strong>GitHub</strong>Link your repositories and write-ups here.</a>
+              <a class="resource-item" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><strong>LinkedIn</strong>Add your public professional profile here.</a>
+              <div class="resource-item"><strong>Resume PDF</strong>Upload a current resume and replace this box with a real file link.</div>
+              <div class="resource-item"><strong>Lab write-ups</strong>Add short reports, screenshots, and sanitized findings for stronger proof.</div>
             </div>
-          </article>
-          <article class="card project-card">
-            <div class="project-top">
-              <div>
-                <div class="project-num">Cyber Lab</div>
-                <h3>Azure Home Lab</h3>
-              </div>
-              <div class="project-links">
-                <span class="mini-link">Azure</span>
-                <span class="mini-link">KQL</span>
-              </div>
-            </div>
-            <p>Practiced log analysis, threat detection, and security monitoring concepts in a cloud environment to strengthen troubleshooting and systems visibility skills.</p>
-            <div class="tag-list">
-              <span class="tag">Cloud lab</span>
-              <span class="tag">Log analysis</span>
-              <span class="tag">Security mindset</span>
-            </div>
-          </article>
-          <article class="card project-card">
-            <div class="project-top">
-              <div>
-                <div class="project-num">Coursework</div>
-                <h3>CodePath Cybersecurity</h3>
-              </div>
-              <div class="project-links">
-                <span class="mini-link">Remote</span>
-                <span class="mini-link">Course lab</span>
-              </div>
-            </div>
-            <p>Used Azure lab environments to review network activity, identify suspicious behavior, and build stronger incident-awareness skills that support secure IT operations.</p>
-            <div class="tag-list">
-              <span class="tag">Monitoring</span>
-              <span class="tag">Threat review</span>
-              <span class="tag">Foundational security</span>
-            </div>
-          </article>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="skills">
+    <section class="section" id="contact">
       <div class="container">
-        <div class="section-head">
+        <div class="contact-panel">
           <div>
-            <h2>Technical strengths</h2>
+            <span class="eyebrow">Contact</span>
+            <h2>Open to early-career IT and cybersecurity opportunities.</h2>
+            <p>If you are hiring for an IT support, security analyst, or technical operations role where troubleshooting, communication, and careful documentation matter, I would love to connect.</p>
           </div>
-          <p>Entry-level help desk resumes are strongest when they emphasize technical troubleshooting, ticketing tools, Microsoft or cloud support skills, and communication or documentation habits tied to real support work.</p>
-        </div>
-        <div class="grid-3">
-          <article class="card">
-            <h3>Support tools</h3>
-            <p>ServiceNow, Office 365, Microsoft Office Suite, Jira.</p>
-          </article>
-          <article class="card">
-            <h3>Systems &amp; data</h3>
-            <p>Azure, Splunk, SQL, SQL Server Management Studio, HTML, CSS, Python, Java.</p>
-          </article>
-          <article class="card">
-            <h3>Communication</h3>
-            <p>Bilingual in English and Spanish with strong customer service and technical writing foundations.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="resume">
-      <div class="container resume-panel">
-        <div class="callout">
-          <div class="section-head" style="margin-bottom:1rem;display:block">
-            <h2 style="margin-bottom:1rem">Resume direction</h2>
-            <p>Help desk resume examples emphasize a support-focused summary, relevant troubleshooting skills, and tailored project sections that align with entry-level IT support job descriptions.</p>
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:yourname@example.com">Email Me</a>
+            <a class="btn btn-secondary" href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="btn btn-secondary" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
-          <ul class="resume-list">
-            <li>Lead with IT support, ServiceNow, ticketing, and user support rather than security-heavy language.</li>
-            <li>Keep project write-ups short on the resume and place fuller walkthroughs on GitHub or a portfolio site.</li>
-            <li>Use this site to support your applications for help desk, service desk analyst, desktop support, and junior IT support roles.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Education &amp; certification</h3>
-          <p><strong>Kennesaw State University</strong><br>B.S. in Information Technology, May 2025</p>
-          <div class="tag-list">
-            <span class="tag">Programming I &amp; II</span>
-            <span class="tag">Database Systems</span>
-            <span class="tag">Web Development</span>
-            <span class="tag">IT Management</span>
-          </div>
-          <p style="margin-top:1rem"><strong>Certification:</strong> CompTIA A+ (In Progress)</p>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <strong>Janelle Tenorio</strong><br>
-        Atlanta, Georgia · IT Help Desk / IT Support
-      </div>
-      <div>
-        Replace the placeholder links and contact details with your final GitHub, LinkedIn, and resume file before publishing.
-      </div>
-    </div>
+  <footer>
+    <div class="container">Designed as a recruiter-first portfolio structure for Janelle Tenorio. Replace placeholders with your real GitHub, LinkedIn, resume, and project links.</div>
   </footer>
 
-  <script>
-    (function () {
-      const btn = document.querySelector('[data-theme-toggle]');
-      const root = document.documentElement;
-      let theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      root.setAttribute('data-theme', theme);
-      const render = () => {
-        btn.innerHTML = theme === 'dark'
-          ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg>'
-          : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
-      };
-      render();
-      btn.addEventListener('click', () => {
-        theme = theme === 'dark' ? 'light' : 'dark';
-        root.setAttribute('data-theme', theme);
-        render();
-      });
-    })();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
